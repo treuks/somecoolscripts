@@ -22,7 +22,7 @@ if (args.length < 3) {
     console.log("   Emoji Image Directory - The directory with new emojis.");
     console.log("   Output path           - Path to where you want to put the txt file containing the emojis. \n");
     console.log("Example:");
-    console.log("   deno run generate-emoji-txt.ts emoji-test.txt ./emojis output.txt --allow-read --allow-write ")
+    console.log("   deno run generate-emoji-txt.ts emoji-test.txt emojis output.txt --allow-read --allow-write ")
 }
 
 const InputFile = args[0];
