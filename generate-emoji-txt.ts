@@ -16,13 +16,13 @@
 const { args } = Deno;
 
 if (args.length < 3) {
-    console.log("Usage: deno run generate-emoji-txt.ts --allow-read --allow-write <input emoji-test.txt file> <emoji image directory> <output path>\n");
+    console.log("Usage: deno run generate-emoji-txt.ts <input emoji-test.txt file> <emoji image directory> <output path> --allow-read --allow-write \n");
     console.log("Information:");
     console.log("   emoji-test.txt        - file containing a list of all emojis.");
     console.log("   Emoji Image Directory - The directory with new emojis.");
     console.log("   Output path           - Path to where you want to put the txt file containing the emojis. \n");
     console.log("Example:");
-    console.log("   deno run generate-emoji-txt.ts --allow-read --allow-write emoji-test.txt ./emojis output.txt")
+    console.log("   deno run generate-emoji-txt.ts emoji-test.txt ./emojis output.txt --allow-read --allow-write ")
 }
 
 const InputFile = args[0];
